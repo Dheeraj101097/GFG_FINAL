@@ -31,7 +31,7 @@ body {
   display: none;
   transition: opacity ease 1s;
 }
-.cursor {
+/* .cursor {
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -42,7 +42,7 @@ body {
   background-position: center;
   background-size: cover;
   mix-blend-mode: difference;
-}
+} */
 #cursor-blur {
   height: 350px;
   width: 350px;
@@ -92,7 +92,7 @@ body {
 }
 #nav {
   height: 55px;
-  width: 100%;
+  width: 100vw;
   /* background-color: red; */
   display: flex;
   align-items: center;
@@ -1244,7 +1244,6 @@ button {
 
 .footer-distributed .footer-left img {
   height: 80px;
-  transform: translate(30%);
 }
 /* The company logo */
 
@@ -1398,9 +1397,9 @@ button {
     text-align: center;
   }
 
-  .footer-distributed .footer-center i {
+  /* .footer-distributed .footer-center i {
     margin-left: 0;
-  }
+  } */
 }
 
 /* 

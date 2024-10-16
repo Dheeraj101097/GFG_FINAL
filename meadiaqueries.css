@@ -77,6 +77,8 @@ video {
   }
   .heading-welcome {
     padding: 1.8rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
   }
   .page2-left h2 {
     font-size: 1.8rem;
@@ -119,6 +121,13 @@ video {
     align-items: center;
     justify-content: center;
   }
+
+  .footer-distributed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Media query for small mobile devices (max-width: 480px) */
@@ -131,8 +140,13 @@ video {
     align-items: center;
     margin-bottom: 30px;
   }
-  .heading-welcome {
+  /* .heading-welcome {
     padding: 0.8rem;
+  } */
+  .heading-welcome {
+    padding: 1.8rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
   }
   .page2-left h2 {
     font-size: 0.5rem;
@@ -186,8 +200,13 @@ video {
     align-items: center;
     margin-bottom: 70px;
   }
-  .heading-welcome {
+  /* .heading-welcome {
     padding: 0.8rem;
+  } */
+  .heading-welcome {
+    padding: 1.8rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
   }
   .page2-container {
     height: max-content;
@@ -237,3 +256,95 @@ video {
     justify-content: center;
   }
 }
+
+/* nav bar */
+/* 
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+}
+
+#nav img {
+  height: 50px;
+}
+
+#nav-part2 {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-text {
+  font-size: 1.2rem;
+  color: #000;
+  cursor: pointer;
+}
+
+#nav-part3 {
+  display: flex;
+  align-items: center;
+}
+
+#circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+}
+/* Media query for tablets and small devices (max-width: 768px) */
+/* @media only screen and (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #nav img {
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+
+  #nav-part2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-text {
+    font-size: 1rem;
+  }
+
+  #nav-part3 {
+    margin-top: 1rem;
+  }
+
+  #circle {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Media query for small mobile devices (max-width: 480px) */
+/* @media only screen and (max-width: 480px) {
+  #nav {
+    padding: 0.5rem;
+  }
+
+  #nav img {
+    height: 35px;
+  }
+
+  #nav-part2 {
+    gap: 0.8rem;
+  }
+
+  .nav-text {
+    font-size: 0.9rem;
+  }
+
+  #circle {
+    width: 25px;
+    height: 25px;
+  } 
+}  */
