@@ -1803,3 +1803,195 @@ button {
   color: #f5f5f5;
   background-color: #2f8d46;
 }
+
+/* model styling */
+/* 
+.model {
+  margin: auto;
+  padding: 60px;
+  margin-top: -56vh;
+  background-color: rgba(254, 254, 254, 0.466);
+  backdrop-filter: blur(10px); 
+  color: black;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+  border-radius: 4px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.model .model-inside-container {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start; 
+  background-color: transparent; 
+  margin-bottom: 20px; 
+}
+
+.model-logo {
+  height: 3vmax; 
+  
+  position: absolute;
+  transform: translate(-24%, -90%);
+  
+}
+
+.model h1 {
+  font-size: 2vmax;
+  
+  opacity: 0; 
+  animation: fadeIn 0.8s forwards ease-in-out; 
+  text-align: center;
+}
+
+.model p {
+  color: rgba(0, 0, 0, 0.799);
+  opacity: 0; 
+  animation: fadeIn 1s forwards ease-in-out; 
+}
+.model .close-model {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: black;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.model .close-model:hover {
+ 
+  color: white;
+  transition: 0.3s ease;
+  transform: rotate(90deg); 
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.hidden {
+  display: none;
+}
+.grid-view {
+  transform: scale(0.75);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100rem;
+  background: rgba(98, 98, 98, 0.679); 
+  backdrop-filter: blur(6px); 
+  transition: all 0.3s ease;
+}
+
+:root {
+  --bg-color: rgb(20, 20, 20);
+  --card-color: rgb(23, 23, 23);
+} */
+
+/* check 2nd time for model */
+
+/* Modal styles */
+.model {
+  margin: auto;
+  padding: 20px;
+  width: 80%; /* Set a percentage width */
+  max-width: 600px; /* Ensure it doesn't grow too large */
+  background-color: rgba(254, 254, 254, 0.9);
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  color: black;
+  border-radius: 8px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.model-logo {
+  height: 6px;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.model h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.model p {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 1em;
+}
+
+.model .close-model {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.model .close-model:hover {
+  color: white;
+  background-color: red;
+  transform: rotate(90deg); /* Rotation effect on hover */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark background */
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}

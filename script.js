@@ -352,4 +352,40 @@ document.getElementById("cards").onmousemove = (e) => {
   }
 };
 
-// my modal
+// my model
+const model = document.querySelector(".model");
+const e_overlay = document.querySelector(".overlay");
+const btnCloseModel = document.querySelector(".close-model");
+const btnsOpenModal = document.querySelector(".about-us");
+console.log(btnsOpenModal);
+
+const openModel = function () {
+  model.classList.remove("hidden");
+  e_overlay.classList.remove("hidden");
+  gsap.fromTo(
+    model,
+    { opacity: 0, scale: 0.5 }, // Initial state
+    { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" } // Animation to apply
+  );
+};
+
+const closeModel = function () {
+  gsap.to(model, {
+    opacity: 0,
+    scale: 0.5,
+    duration: 0.3,
+    ease: "power2.out",
+    onComplete: function () {
+      model.classList.add("hidden");
+      e_overlay.classList.add("hidden");
+    },
+  });
+};
+
+btnCloseModel.addEventListener("click", closeModel);
+e_overlay.addEventListener("click", closeModel);
+document.addEventListener("keydown", function (keyPressEvent) {
+  if (keyPressEvent.key === "Escape" && !model.classList.contains("hidden")) {
+    closeModel();
+  }
+});

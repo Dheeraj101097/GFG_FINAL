@@ -453,19 +453,64 @@
             </div>
           </div>
           </div>
+
+          <!-- page 3 -->
           <div id="page3">
             <h2 id="heading" >OUR TECHNICAL TEAMS</h2>
             <div id="page3cards">
+
+
+                <!-- checking modal
+                 
+  <button id="openModalBtn">Meet the team</button>
+
+  
+  <div id="myModal" class="modal">
+
+    
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      
+      <div id="modal-body"></div>
+    </div>
+
+  </div>
+                 
+                -->
               <!-- card -->
             <div id="card">
               <div id="bg"></div>
               <img src="./assets/webdev.jpg" alt="">
               <div id="text">
-                <span class="name">Web Dev</span>
+                <span class="name">Web development</span>
                 <br>
                 <span class="work">Team</span>
               </div>
-              <button>Meet the team</button>
+              <button onclick="openModel()" >Meet the team</button>
+              <!-- model -->
+              <div class="model hidden">
+                <button class="close-model">&times;</button>
+                <img src="./assets/gfg-logo.png" alt="GFG Student Chapter GGV Logo" class="model-logo"
+                    >
+                <div class="model-inside-container"
+                    style="display: flex; align-items: center; justify-content: flex-start; ">
+                    <h1 style="color: green;">WEB DEVELOPMENT TEAM</h1>
+                </div>
+                <p>As a team we create various websites ensuring their functionality and smoothness .Create eye-catching visuals and web pages making learn coding much easier</p>
+                <div class="model-list" >
+                    <ul>
+                        <li style="color: black;">Abhinav Singh - LEAD</li>
+                        <li style="color: black;">Dheeraj Patnaik - SENIOR EXECUTIVE</li>
+                        <li style="color: black;">Deepak Kumar - SENIOR EXECUTIVE</li>
+                        <li style="color: black;">Harsh Agarwal - EXECUTIVE </li>
+                        <li style="color: black;">Priyanshu Gupta - EXECUTIVE </li>
+                        <li style="color: black;">Nikita Singh - EXECUTIVE</li>
+                      </ul>
+                </div>
+                
+               </div>
+               <div class="overlay hidden"></div>
+              
             </div>
               <!-- card -->
             <div id="card">
@@ -476,7 +521,18 @@
                 <br>
                 <span class="work">Team</span>
               </div>
-              <button>Meet the team</button>
+              <button onclick="openModel()">Meet the team</button>
+              <div class="model hidden">
+                <button class="close-model">&times;</button>
+                <img src="./assets/gfg-logo.png" alt="GFG Student Chapter GGV Logo" class="modal-logo"
+                    >
+                <div class="model-inside-container"
+                    style="display: flex; align-items: center; justify-content: flex-start; ">
+                    <h1>Let's know more about us (GFG Student Chapter GGV)</h1>
+                </div>
+                <p>hello</p>
+               </div>
+               <div class="overlay hidden"></div>
             </div>
               <!-- card -->
             <div id="card">
